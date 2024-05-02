@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="ProjectAkhir_RAiso.View.General" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, 'Sans Serif Collection';
+        }
+
+        #Navigation-Bar {
+            border-bottom: 1px solid #88AED0;
+            display: flex;
+            justify-content: space-between;
+            padding: 1vh;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1vh;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            gap: 10vh;
+            padding-right: 2vh;
+            right: 0;
+        }
+
+        #Img_Store {
+            width: 7%;
+        }
+
+        #Img_Store, #Hl_Store {
+            text-decoration: none;
+            color: #88AED0;
+            display: flex;
+            align-items: center;
+        }
+
+        #Hl_Login {
+            text-decoration: none;
+            color: #88AED0;
+        }
+
+        #Hl_Register {
+            text-decoration: none;
+            color: #88AED0;
+        }
+
+        #Btn_Cart, #Btn_Transaction, #Img_Profile {
+            width: 2%;
+        }
+        #Hl_Store{
+            font-size: x-large;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Navigation-Bar">
+            <div class="left">
+                <asp:ImageButton ID="Img_Store" runat="server" text="Raiso" ImageUrl="~/Assets/logo.png" OnClick="Img_Store_Click"/>
+                <asp:HyperLink ID="Hl_Store" runat="server" Visible="true" NavigateUrl="~/View/HomePage.aspx">Raiso</asp:HyperLink>
+            </div>
+
+            <div class="right">
+                <asp:HyperLink ID="Hl_Login" runat="server" Visible="true" NavigateUrl="~/View/LoginPage.aspx">Login</asp:HyperLink>
+
+                <asp:HyperLink ID="Hl_Register" runat="server" Visible="true" NavigateUrl="~/View/RegisterPage.aspx">Register</asp:HyperLink>
+
+                <asp:ImageButton ID="Btn_Cart" runat="server" Visible="true" ImageUrl="~/Assets/add-to-cart.png" OnClick="Btn_Cart_Click"/>
+
+                <asp:ImageButton ID="Btn_Transaction" runat="server" Visible="true" ImageUrl="~/Assets/transaction.png" />
+
+                <asp:Label ID="Lbl_Profile" runat="server" Text="" Visible="true"></asp:Label>
+                <asp:ImageButton ID="Img_Profile" runat="server" Visible="true" ImageUrl="~/Assets/user.png" />
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
