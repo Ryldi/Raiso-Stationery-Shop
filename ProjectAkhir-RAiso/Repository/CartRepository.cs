@@ -41,5 +41,23 @@ namespace ProjectAkhir_RAiso.Repository
 
             return carts;
         }
+        public static void DeleteItemFromCart(int UserID, int ItemID)
+        {
+            Cart TargetCart = _db.Carts.Where(x => x.UserID == UserID && x.StationeryID == ItemID).FirstOrDefault();
+
+            if (TargetCart == null) { return; }
+
+            _db.Carts.Remove(TargetCart);
+            _db.SaveChanges();
+        }
+        public static void UpdateCart(int UserID, int ItemID, int newQuantity)
+        {
+            Cart OldCart = _db.Carts.Where(x => x.UserID == UserID && x.StationeryID == ItemID).FirstOrDefault();
+
+            if (OldCart == null) { return; }
+
+            OldCart.Quantity = newQuantity;
+            _db.SaveChanges();
+        }
     }
 }

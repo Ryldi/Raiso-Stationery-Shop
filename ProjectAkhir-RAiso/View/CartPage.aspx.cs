@@ -24,8 +24,14 @@ namespace ProjectAkhir_RAiso.View
 
                 List<dynamic> carts = CartController.GetCartInformation(Logged.UserID);
 
-                Gv_Cart.DataSource = carts;
-                Gv_Cart.DataBind();
+                if(carts.Count() > 0)
+                {
+                    Lbl_Status.Visible = false;
+                    Btn_CheckOut.Visible = true;
+
+                    Gv_Cart.DataSource = carts;
+                    Gv_Cart.DataBind();
+                }
             }
         }
 
@@ -55,11 +61,18 @@ namespace ProjectAkhir_RAiso.View
         }
         protected void Btn_Confirm_Click(object sender, EventArgs e)
         {
-            string name = Lbl_Item.Text;
-            StationeryController.DeleteStationery(name);
-
             User Logged = (User)Session["UserData"];
+
+            string ItemName = Lbl_Item.Text;
+            CartController.DeleteItemFromCart(Logged.UserID, ItemName);
+
             List<dynamic> carts = CartController.GetCartInformation(Logged.UserID);
+
+            if (carts.Count() == 0)
+            {
+                Lbl_Status.Visible = true;
+                Btn_CheckOut.Visible = false;
+            }
 
             Gv_Cart.DataSource = carts;
             Gv_Cart.DataBind();
@@ -70,6 +83,43 @@ namespace ProjectAkhir_RAiso.View
         protected void Btn_Cancel_Click(object sender, EventArgs e)
         {
             Mdl_Delete.Visible = false;
+        }
+
+        protected void Btn_Back_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("HomePage.aspx");
+        }
+
+        protected void Btn_CheckOut_Click(object sender, EventArgs e)
+        {
+            Mdl_Checkout.Visible = true;
+        }
+
+        protected void Btn_Conf_Checkout_Click(object sender, EventArgs e)
+        {
+            User Logged = (User)Session["UserData"];
+
+            TransactionController.Checkout(Logged.UserID);
+
+            List<dynamic> carts = CartController.GetCartInformation(Logged.UserID);
+
+            if (carts.Count() == 0)
+            {
+                Lbl_Status.Visible = true;
+                Btn_CheckOut.Visible = false;
+            }
+
+            Gv_Cart.DataSource = carts;
+            Gv_Cart.DataBind();
+
+            Mdl_Checkout.Visible = false;
+
+            Response.Redirect("HomePage.aspx");
+        }
+
+        protected void Btn_Canc_Checkout_Click(object sender, EventArgs e)
+        {
+            Mdl_Checkout.Visible = false;
         }
     }
 }

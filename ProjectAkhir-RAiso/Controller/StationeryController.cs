@@ -48,7 +48,7 @@ namespace ProjectAkhir_RAiso.Controller
                 return "All field must be filled!";
             }else if(name.Length < 3 || name.Length > 50)
             {
-                return "Stationery name must be between 3 and 50 characters.";
+                return "Stationery name must be 3-50 characters.";
             }else if (CheckDuplicateItem(name))
             {
                 return "Item is already been inserted.";

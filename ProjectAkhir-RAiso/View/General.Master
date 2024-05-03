@@ -71,7 +71,7 @@
     <form id="form1" runat="server">
         <div id="Navigation-Bar">
             <div class="left">
-                <asp:ImageButton ID="Img_Store" runat="server" text="Raiso" ImageUrl="~/Assets/logo.png" OnClick="Img_Store_Click"/>
+                <asp:ImageButton ID="Img_Store" runat="server" text="Raiso" ImageUrl="~/Assets/logo.png" OnClick="Img_Store_Click" Width="40"/>
                 <asp:HyperLink ID="Hl_Store" runat="server" Visible="true" NavigateUrl="~/View/HomePage.aspx">Raiso</asp:HyperLink>
             </div>
 
@@ -80,7 +80,7 @@
 
                 <asp:HyperLink ID="Hl_Register" runat="server" Visible="true" NavigateUrl="~/View/RegisterPage.aspx">Register</asp:HyperLink>
 
-                <asp:ImageButton ID="Btn_Cart" runat="server" Visible="true" ImageUrl="~/Assets/add-to-cart.png" OnClick="Btn_Cart_Click"/>
+                <asp:ImageButton ID="Btn_Cart" runat="server" Visible="true" ImageUrl="~/Assets/trolley.png" OnClick="Btn_Cart_Click"/>
 
                 <asp:ImageButton ID="Btn_Transaction" runat="server" Visible="true" ImageUrl="~/Assets/transaction.png" />
 

@@ -85,7 +85,7 @@
     
     <asp:GridView ID="Gv_Stationeries" runat="server" AutoGenerateColumns="false" BorderStyle="None">
         <Columns>
-            <asp:BoundField DataField="StationeryName" HeaderText="Stationery" ItemStyle-CssClass="grid-item" HeaderStyle-CssClass="grid-header"/>
+            <asp:BoundField DataField="StationeryName" HeaderText="Stationery List" ItemStyle-CssClass="grid-item" HeaderStyle-CssClass="grid-header"/>
             <asp:TemplateField ItemStyle-CssClass="img-item" HeaderStyle-CssClass="grid-header" >
                 <ItemTemplate>
                     <asp:ImageButton ID="Btn_Detail" runat="server" ImageUrl="~/Assets/detail.png" Width="30" Visible="true" OnClick="Btn_Detail_Click"/>

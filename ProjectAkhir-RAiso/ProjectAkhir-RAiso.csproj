@@ -91,6 +91,7 @@
     </Content>
     <Content Include="View\CartPage.aspx" />
     <Content Include="View\DetailPage.aspx" />
+    <Content Include="View\EditCartPage.aspx" />
     <Content Include="View\EditPage.aspx" />
     <Content Include="View\HomePage.aspx" />
     <Content Include="View\InsertPage.aspx" />
@@ -101,12 +102,15 @@
   <ItemGroup>
     <Compile Include="Controller\CartController.cs" />
     <Compile Include="Controller\StationeryController.cs" />
+    <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Factory\CartFactory.cs" />
     <Compile Include="Factory\StationeryFactory.cs" />
+    <Compile Include="Factory\TransactionFactory.cs" />
     <Compile Include="Factory\UserFactory.cs" />
     <Compile Include="Handler\CartHandler.cs" />
     <Compile Include="Handler\StationeryHandler.cs" />
+    <Compile Include="Handler\TransactionHandler.cs" />
     <Compile Include="Handler\UserHandler.cs" />
     <Compile Include="Model\Cart.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -142,6 +146,7 @@
     <Compile Include="Repository\CartRepository.cs" />
     <Compile Include="Repository\DatabaseSingleton.cs" />
     <Compile Include="Repository\StationeryRepository.cs" />
+    <Compile Include="Repository\TransactionRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="View\CartPage.aspx.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
@@ -156,6 +161,13 @@
     </Compile>
     <Compile Include="View\DetailPage.aspx.designer.cs">
       <DependentUpon>DetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditCartPage.aspx.cs">
+      <DependentUpon>EditCartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\EditCartPage.aspx.designer.cs">
+      <DependentUpon>EditCartPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\EditPage.aspx.cs">
       <DependentUpon>EditPage.aspx</DependentUpon>

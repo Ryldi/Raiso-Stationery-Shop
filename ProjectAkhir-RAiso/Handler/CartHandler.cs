@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Xml.Linq;
 
 namespace ProjectAkhir_RAiso.Handler
 {
@@ -22,6 +23,16 @@ namespace ProjectAkhir_RAiso.Handler
         public static List<Cart> GetAllCartByID(int UserID)
         {
             return CartRepository.GetAllCart(UserID);
+        }
+
+        public static void DeleteItemFromCart(int UserID, int ItemID)
+        {
+            CartRepository.DeleteItemFromCart(UserID, ItemID);
+        }
+
+        public static void UpdateCart(int UserID, int ItemID, int Quantity)
+        {
+            CartRepository.UpdateCart(UserID, ItemID, Quantity);
         }
     }
 }

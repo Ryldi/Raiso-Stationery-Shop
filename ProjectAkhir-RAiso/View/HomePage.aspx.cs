@@ -41,16 +41,6 @@ namespace ProjectAkhir_RAiso.View
             }
         }
 
-        protected void Gv_Stationeries_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "Detail")
-            {
-                string itemId = e.CommandArgument.ToString();
-
-                Response.Redirect($"DetailPage.aspx?ItemId={itemId}");
-            }
-        }
-
         protected void Btn_Detail_Click(object sender, ImageClickEventArgs e)
         {
             ImageButton Btn = (ImageButton)sender;
