@@ -5,11 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
 
 namespace ProjectAkhir_RAiso.Controller
 {
     public class TransactionController
     {
+        public static bool CheckItemInTransaction(string ItemName)
+        {
+            int ItemID = StationeryController.findIDbyName(ItemName);
+            return TransactionHandler.FindItemInTransaction(ItemID);
+        }
         public static void Checkout(int UserID)
         {
             if (UserID == 0) { return; }
@@ -29,6 +35,8 @@ namespace ProjectAkhir_RAiso.Controller
             List<TransactionHeader> Transaction = TransactionHandler.GetUserTransaction(UserID);
             List<dynamic> TransactionList = new List<dynamic>();
 
+            if (Transaction == null) return null;
+
             foreach (TransactionHeader transaction in Transaction)
             {
                 TransactionList.Add(new
@@ -36,6 +44,27 @@ namespace ProjectAkhir_RAiso.Controller
                     TransactionID = transaction.TransactionID,
                     TransactionDate = transaction.TransactionDate,
                     UserName = UserController.GetUserName(UserID)
+                });
+            }
+
+            return TransactionList;
+        }
+        public static List<dynamic> GetTransactionDetail(int TransactionID)
+        {
+            List<TransactionDetail> Details = TransactionHandler.GetTransactionDetail(TransactionID);
+            List<dynamic> TransactionList = new List<dynamic>();
+
+            if (Details == null) return null;
+
+            foreach (TransactionDetail transaction in Details)
+            {
+                Stationery item = StationeryController.findItem(transaction.StationeryID);
+
+                TransactionList.Add(new
+                {
+                    StationeryName = item.StationeryName,
+                    StationeryPrice = item.StationeryPrice,
+                    Quantity = transaction.Quantity
                 });
             }
 

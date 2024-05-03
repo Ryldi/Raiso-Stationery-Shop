@@ -24,6 +24,12 @@ namespace ProjectAkhir_RAiso.View
 
                 List<dynamic> transaction = TransactionController.GetTransactionInformation(Logged.UserID);
 
+                if(transaction == null)
+                {
+                    Lbl_Status.Visible = true;
+                    return;
+                }
+
                 if (transaction.Count() > 0)
                 {
                     Lbl_Status.Visible = false;
@@ -36,7 +42,13 @@ namespace ProjectAkhir_RAiso.View
 
         protected void Btn_Detail_Click(object sender, ImageClickEventArgs e)
         {
+            ImageButton Btn = (ImageButton)sender;
 
+            GridViewRow row = (GridViewRow)Btn.NamingContainer;
+
+            int TrID = Convert.ToInt32(row.Cells[0].Text);
+
+            Response.Redirect("TransactionDetailPage.aspx?Id=" + TrID);
         }
 
         protected void Btn_Back_Click(object sender, ImageClickEventArgs e)

@@ -11,6 +11,10 @@ namespace ProjectAkhir_RAiso.Handler
 {
     public class TransactionHandler
     {
+        public static bool FindItemInTransaction(int ItemID)
+        {
+            return TransactionRepository.FindItemInTransaction(ItemID);
+        }
         public static int InitTransaction(int UserID)
         {
             return TransactionRepository.InitTransaction(UserID);
@@ -24,6 +28,11 @@ namespace ProjectAkhir_RAiso.Handler
         public static List<TransactionHeader> GetUserTransaction(int UserID)
         {
             return TransactionRepository.GetUserTransaction(UserID);
+        }
+
+        public static List<TransactionDetail> GetTransactionDetail(int TransactionID)
+        {
+            return TransactionRepository.GetTransactionDetail(TransactionID);
         }
     }
 }

@@ -9,9 +9,21 @@ namespace ProjectAkhir_RAiso.Controller
 {
     public class StationeryController
     {
-        public static void DeleteStationery(string name)
+        public static string DeleteStationery(string name)
         {
+            if (CartController.CheckItemInCart(name))
+            {
+                return "Item cannot be deleted (Item is in users cart)";
+            }
+            else if (TransactionController.CheckItemInTransaction(name))
+            {
+                return "Item cannot be deleted (Item is in transactions)";
+            }
+
             StationeryHandler.DeleteStationery(name);
+
+            return "Delete Successfully";
+
         }
         public static string UpdateStationery(string name, string price, int id)
         {

@@ -34,5 +34,10 @@ namespace ProjectAkhir_RAiso.Handler
         {
             CartRepository.UpdateCart(UserID, ItemID, Quantity);
         }
+
+        public static bool FindItemInCart(int ItemID)
+        {
+            return CartRepository.FindItemInCart(ItemID);
+        }
     }
 }

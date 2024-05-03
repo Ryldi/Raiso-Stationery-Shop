@@ -1,5 +1,6 @@
 ﻿using ProjectAkhir_RAiso.Handler;
 using ProjectAkhir_RAiso.Model;
+using ProjectAkhir_RAiso.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,6 +77,12 @@ namespace ProjectAkhir_RAiso.Controller
 
             CartHandler.UpdateCart(UserID, ItemID, Quantity);
             return "Update Success.";
+        }
+
+        public static bool CheckItemInCart(string ItemName)
+        {
+            int ItemID = StationeryController.findIDbyName(ItemName);
+            return CartHandler.FindItemInCart(ItemID);
         }
     }
 }

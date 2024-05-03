@@ -87,9 +87,13 @@ namespace ProjectAkhir_RAiso.View
         protected void Btn_Confirm_Click(object sender, EventArgs e)
         {
             string name = Lbl_Item.Text;
-            StationeryController.DeleteStationery(name);
-            Gv_Stationeries.DataSource = StationeryController.GetStationeryList();
-            Gv_Stationeries.DataBind();
+            Lbl_Status.Text = StationeryController.DeleteStationery(name);
+
+            if(Lbl_Status.Text == "Delete Successfully")
+            {
+                Gv_Stationeries.DataSource = StationeryController.GetStationeryList();
+                Gv_Stationeries.DataBind();
+            }
 
             Mdl_Delete.Visible = false;
         }

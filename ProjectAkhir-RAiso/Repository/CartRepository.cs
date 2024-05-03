@@ -59,5 +59,13 @@ namespace ProjectAkhir_RAiso.Repository
             OldCart.Quantity = newQuantity;
             _db.SaveChanges();
         }
+        public static bool FindItemInCart(int ItemID)
+        {
+            Cart cart = _db.Carts.Where(x=> x.StationeryID == ItemID).FirstOrDefault();
+
+            if (cart == null) { return false; }
+
+            return true;
+        }
     }
 }

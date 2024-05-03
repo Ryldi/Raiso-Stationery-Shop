@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Util;
 
 namespace ProjectAkhir_RAiso.Repository
 {
@@ -35,6 +36,24 @@ namespace ProjectAkhir_RAiso.Repository
             if (AllTransaction.Count == 0) { return null; }
 
             return AllTransaction;
+        }
+
+        public static List<TransactionDetail> GetTransactionDetail(int TransactionID)
+        {
+            List<TransactionDetail> AllDetail = _db.TransactionDetails.Where(x => x.TransactionID == TransactionID).ToList();
+
+            if (AllDetail.Count == 0) { return null; }
+
+            return AllDetail;
+        }
+
+        public static bool FindItemInTransaction(int ItemID)
+        {
+            TransactionDetail Detail = _db.TransactionDetails.Where(x=> x.StationeryID == ItemID).FirstOrDefault();
+
+            if (Detail == null) { return false; }
+
+            return true;
         }
     }
 }
