@@ -23,5 +23,10 @@ namespace ProjectAkhir_RAiso.Handler
         {
             return UserRepository.findRegisteredUser(name, password);
         }
+
+        public static string GetUserName(int UserID)
+        {
+            return UserRepository.GetUserName(UserID);
+        }
     }
 }

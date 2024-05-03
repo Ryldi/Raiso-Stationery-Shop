@@ -82,7 +82,7 @@
 
                 <asp:ImageButton ID="Btn_Cart" runat="server" Visible="true" ImageUrl="~/Assets/trolley.png" OnClick="Btn_Cart_Click"/>
 
-                <asp:ImageButton ID="Btn_Transaction" runat="server" Visible="true" ImageUrl="~/Assets/transaction.png" />
+                <asp:ImageButton ID="Btn_Transaction" runat="server" Visible="true" ImageUrl="~/Assets/transaction.png" OnClick="Btn_Transaction_Click"/>
 
                 <asp:Label ID="Lbl_Profile" runat="server" Text="" Visible="true"></asp:Label>
                 <asp:ImageButton ID="Img_Profile" runat="server" Visible="true" ImageUrl="~/Assets/user.png" />

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/General.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="ProjectAkhir_RAiso.View.HomePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        #<%=Gv_Stationeries.ClientID %> {
+        .grid-view {
             display: flex;
             justify-content: center;
             padding: 2vh;
@@ -55,7 +55,7 @@
             gap: 2vh;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
-        #<%=Btn_Confirm.ClientID %>{
+        .btn-confirm{
             background-color: red;
             color: whitesmoke;
             border: none;
@@ -63,7 +63,7 @@
             border-radius: 1vh;
             cursor: pointer;
         }
-        #<%=Btn_Cancel.ClientID %>{
+        .btn-cancel{
             background-color: #88AED0;
             color: whitesmoke;
             border: none;
@@ -83,7 +83,7 @@
         <asp:Button ID="Btn_Insert" runat="server" Text="Add" Visible="true" OnClick="Btn_Insert_Click"/>
     </div>
     
-    <asp:GridView ID="Gv_Stationeries" runat="server" AutoGenerateColumns="false" BorderStyle="None">
+    <asp:GridView ID="Gv_Stationeries" runat="server" AutoGenerateColumns="false" BorderStyle="None" CssClass="grid-view">
         <Columns>
             <asp:BoundField DataField="StationeryName" HeaderText="Stationery List" ItemStyle-CssClass="grid-item" HeaderStyle-CssClass="grid-header"/>
             <asp:TemplateField ItemStyle-CssClass="img-item" HeaderStyle-CssClass="grid-header" >
@@ -103,8 +103,8 @@
             <asp:Label ID="Label2" runat="server" Text=" from inventory?"></asp:Label>
         </div>
         <div class="sub-modal">
-            <asp:Button ID="Btn_Confirm" runat="server" Text="Delete" OnClick="Btn_Confirm_Click"/>
-            <asp:Button ID="Btn_Cancel" runat="server" Text="Cancel" OnClick="Btn_Cancel_Click"/>
+            <asp:Button ID="Btn_Confirm" runat="server" Text="Delete" OnClick="Btn_Confirm_Click" CssClass="btn-confirm"/>
+            <asp:Button ID="Btn_Cancel" runat="server" Text="Cancel" OnClick="Btn_Cancel_Click" CssClass="btn-cancel"/>
         </div>
     </asp:Panel>
 </asp:Content>

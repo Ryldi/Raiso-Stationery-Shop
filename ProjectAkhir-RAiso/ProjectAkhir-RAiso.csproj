@@ -97,6 +97,9 @@
     <Content Include="View\InsertPage.aspx" />
     <Content Include="View\LoginPage.aspx" />
     <Content Include="View\RegisterPage.aspx" />
+    <Content Include="View\TransactionDetailPage.aspx" />
+    <Content Include="View\TransactionHistoryPage.aspx" />
+    <Content Include="View\TransactionReportPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +213,27 @@
     </Compile>
     <Compile Include="View\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionDetailPage.aspx.cs">
+      <DependentUpon>TransactionDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\TransactionDetailPage.aspx.designer.cs">
+      <DependentUpon>TransactionDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionHistoryPage.aspx.cs">
+      <DependentUpon>TransactionHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\TransactionHistoryPage.aspx.designer.cs">
+      <DependentUpon>TransactionHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionReportPage.aspx.cs">
+      <DependentUpon>TransactionReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\TransactionReportPage.aspx.designer.cs">
+      <DependentUpon>TransactionReportPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

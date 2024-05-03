@@ -20,5 +20,10 @@ namespace ProjectAkhir_RAiso.Handler
         {
             TransactionRepository.InsertTransactionDetail(TransactionID, StationeryID, Quantity);
         }
+
+        public static List<TransactionHeader> GetUserTransaction(int UserID)
+        {
+            return TransactionRepository.GetUserTransaction(UserID);
+        }
     }
 }

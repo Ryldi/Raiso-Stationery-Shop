@@ -43,11 +43,13 @@ namespace ProjectAkhir_RAiso.Repository
 
         }
 
-        public static int newID()
+        public static string GetUserName(int UserID)
         {
-            User LastUser = _db.Users.ToList().LastOrDefault();
-            if (LastUser == null) return 1;
-            return LastUser.UserID + 1;
+            User user = _db.Users.Find(UserID);
+
+            if (user == null) { return null; }
+
+            return user.UserName;
         }
     }
 }

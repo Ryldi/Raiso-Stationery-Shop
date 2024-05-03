@@ -72,5 +72,9 @@ namespace ProjectAkhir_RAiso.Controller
 
             return age;
         }
+        public static string GetUserName(int UserID)
+        {
+            return UserHandler.GetUserName(UserID);
+        }
     }
 }

@@ -27,5 +27,14 @@ namespace ProjectAkhir_RAiso.Repository
             _db.TransactionDetails.Add(newDetail);
             _db.SaveChanges();
         }
+
+        public static List<TransactionHeader> GetUserTransaction(int UserID)
+        {
+            List<TransactionHeader> AllTransaction = _db.TransactionHeaders.Where(x=> x.UserID == UserID).ToList();
+
+            if (AllTransaction.Count == 0) { return null; }
+
+            return AllTransaction;
+        }
     }
 }

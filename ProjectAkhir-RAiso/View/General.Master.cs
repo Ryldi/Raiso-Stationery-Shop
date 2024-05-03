@@ -59,5 +59,22 @@ namespace ProjectAkhir_RAiso.View
         {
             Response.Redirect("CartPage.aspx");
         }
+
+        protected void Btn_Transaction_Click(object sender, ImageClickEventArgs e)
+        {
+            User Logged = (User)Session["UserData"];
+
+            if(Logged.UserRole == "Customer")
+            {
+                Response.Redirect("TransactionHistoryPage.aspx");
+            }else if(Logged.UserRole == "Admin")
+            {
+                Response.Redirect("TransactionReportPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("HomePage.aspx");
+            }
+        }
     }
 }
