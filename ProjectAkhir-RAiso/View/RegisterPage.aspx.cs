@@ -28,8 +28,13 @@ namespace ProjectAkhir_RAiso.View
 
             if(Lbl_Status.Text == "Account has been registered.")
             {
+                Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Session["TempData"] = UserController.getUser(name);
-                Response.Redirect("LoginPage.aspx"); 
+                Response.Redirect("LoginPage.aspx");
+            }
+            else
+            {
+                Lbl_Status.ForeColor = System.Drawing.Color.Red;
             }
         }
 

@@ -21,7 +21,7 @@ namespace ProjectAkhir_RAiso.View
                 Btn_Cart.Visible = false;
                 Btn_Transaction.Visible = false;
                 Lbl_Profile.Visible = false;
-                Img_Profile.Visible = false;
+                Btn_Profile.Visible = false;
 
                 return;
             }else if (Logged.UserRole == "Customer")
@@ -32,7 +32,7 @@ namespace ProjectAkhir_RAiso.View
                 Btn_Transaction.Visible = true;
                 //Transaction Link to Transaction Page
                 Lbl_Profile.Visible = true;
-                Img_Profile.Visible = true;
+                Btn_Profile.Visible = true;
 
                 Lbl_Profile.Text = "Hi, " + Logged.UserName;
             }
@@ -44,7 +44,7 @@ namespace ProjectAkhir_RAiso.View
                 Btn_Transaction.Visible = true;
                 //Transaction Link to Transaction Report
                 Lbl_Profile.Visible = true;
-                Img_Profile.Visible = true;
+                Btn_Profile.Visible = true;
 
                 Lbl_Profile.Text = "Hi, " + Logged.UserName;
             }
@@ -75,6 +75,24 @@ namespace ProjectAkhir_RAiso.View
             {
                 Response.Redirect("HomePage.aspx");
             }
+        }
+
+        protected void Btn_Profile_Click(object sender, ImageClickEventArgs e)
+        {
+            if(Pnl_Profile.Visible == true) Pnl_Profile.Visible = false;
+            else Pnl_Profile.Visible = true;
+        }
+
+        protected void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Session["UserData"] = null;
+            Session["TempData"] = null;
+            Response.Redirect("LoginPage.aspx");
+        }
+
+        protected void Btn_UpdateProfile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UpdateProfilePage.aspx");
         }
     }
 }

@@ -76,5 +76,29 @@ namespace ProjectAkhir_RAiso.Controller
         {
             return UserHandler.GetUserName(UserID);
         }
+
+        public static string UpdateUser(int UserID, string name, string DOB, string gender, string address, string phone, string password)
+        {
+            if (name == "" || DOB == "" || gender == "" || address == "" || password == "" || phone == "")
+            {
+                return "All field must be filled!";
+            }
+            else if (!password.All(x => char.IsLetterOrDigit(x) || char.IsWhiteSpace(x)))
+            {
+                return "Password must be alphanumeric.";
+            }
+            else if (name.Length < 5 || name.Length > 50)
+            {
+                return "Name must be at least 5 characters.";
+            }
+            else if (getUserAge(DOB) < 1)
+            {
+                return "User must be at least 1 year old";
+            }
+
+            UserHandler.UpdateUser(UserID, name, DOB, gender, address, phone, password);
+
+            return "Account has been updated.";
+        }
     }
 }

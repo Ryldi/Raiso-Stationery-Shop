@@ -62,6 +62,20 @@
             gap: 2vh;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
+        .modal-error {
+            border: 2px solid #88AED0;
+            border-radius: 1vh;
+            position: fixed;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: whitesmoke;
+            padding: 2vh;
+            display: grid;
+            gap: 2vh;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
 
         .btn-confirm {
             background-color: red;
@@ -118,12 +132,12 @@
         </div>
     </asp:Panel>
 
-    <asp:Panel ID="Mdl_Error" runat="server" Visible="false" CssClass="modal-delete">
+    <asp:Panel ID="Mdl_Error" runat="server" Visible="false" CssClass="modal-error">
         <div>
-            <asp:Label ID="Lbl_Status" runat="server" Text="" Visible="false"></asp:Label>
+            <asp:Label ID="Lbl_Status" runat="server" Text=""></asp:Label>
         </div>
         <div class="sub-modal">
-            <asp:Button ID="Btn_Continue" runat="server" Text="Continue" OnClick="Btn_Cancel_Click" CssClass="btn-cancel" />
+            <asp:Button ID="Btn_Continue" runat="server" Text="Continue" OnClick="Btn_Continue_Click" CssClass="btn-cancel" />
         </div>
     </asp:Panel>
 </asp:Content>

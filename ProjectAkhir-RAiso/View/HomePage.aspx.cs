@@ -88,12 +88,19 @@ namespace ProjectAkhir_RAiso.View
         {
             string name = Lbl_Item.Text;
             Lbl_Status.Text = StationeryController.DeleteStationery(name);
+            Mdl_Error.Visible = true;
 
-            if(Lbl_Status.Text == "Delete Successfully")
+            if(Lbl_Status.Text == "Delete Success")
             {
+                Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Gv_Stationeries.DataSource = StationeryController.GetStationeryList();
                 Gv_Stationeries.DataBind();
             }
+            else
+            {
+                Lbl_Status.ForeColor = System.Drawing.Color.Red;
+            }
+            
 
             Mdl_Delete.Visible = false;
         }
@@ -101,6 +108,11 @@ namespace ProjectAkhir_RAiso.View
         protected void Btn_Cancel_Click(object sender, EventArgs e)
         {
             Mdl_Delete.Visible = false;
+        }
+
+        protected void Btn_Continue_Click(object sender, EventArgs e)
+        {
+            Mdl_Error.Visible = false;
         }
     }
 }

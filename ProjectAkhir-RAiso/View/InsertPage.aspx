@@ -20,7 +20,7 @@
         .sub-form{
             display: grid;
         }
-        #<%=Btn_Submit.ClientID %>{
+        .btn-submit{
             background-color: #88AED0;
             color: whitesmoke;
             border: none;
@@ -51,6 +51,6 @@
             </div>
         </div>
         <asp:Label ID="Lbl_Status" runat="server" Text=""></asp:Label>
-        <asp:Button ID="Btn_Submit" runat="server" Text="Insert" OnClick="Btn_Submit_Click"/>
+        <asp:Button ID="Btn_Submit" runat="server" Text="Insert" OnClick="Btn_Submit_Click" CssClass="btn-submit"/>
     </div>
 </asp:Content>

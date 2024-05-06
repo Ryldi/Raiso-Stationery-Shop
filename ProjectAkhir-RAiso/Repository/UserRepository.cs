@@ -51,5 +51,21 @@ namespace ProjectAkhir_RAiso.Repository
 
             return user.UserName;
         }
+
+        public static void UpdateUser(int UserID, string name, string DOB, string gender, string address, string phone, string password)
+        {
+            User oldUser = _db.Users.Find(UserID);
+            if (oldUser == null) { return; }
+
+            oldUser.UserName = name;
+            oldUser.UserDOB = Convert.ToDateTime(DOB);
+            oldUser.UserGender = gender;
+            oldUser.UserAddress = address;
+            oldUser.UserPhone = phone;
+            oldUser.UserPassword = password;
+
+            _db.SaveChanges();
+            return;
+        }
     }
 }

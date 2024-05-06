@@ -100,6 +100,7 @@
     <Content Include="View\TransactionDetailPage.aspx" />
     <Content Include="View\TransactionHistoryPage.aspx" />
     <Content Include="View\TransactionReportPage.aspx" />
+    <Content Include="View\UpdateProfilePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="View\TransactionReportPage.aspx.designer.cs">
       <DependentUpon>TransactionReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpdateProfilePage.aspx.cs">
+      <DependentUpon>UpdateProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\UpdateProfilePage.aspx.designer.cs">
+      <DependentUpon>UpdateProfilePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

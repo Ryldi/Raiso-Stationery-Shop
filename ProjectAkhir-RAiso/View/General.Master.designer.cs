@@ -96,13 +96,40 @@ namespace ProjectAkhir_RAiso.View
         protected global::System.Web.UI.WebControls.Label Lbl_Profile;
 
         /// <summary>
-        /// Img_Profile control.
+        /// Btn_Profile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton Img_Profile;
+        protected global::System.Web.UI.WebControls.ImageButton Btn_Profile;
+
+        /// <summary>
+        /// Pnl_Profile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Pnl_Profile;
+
+        /// <summary>
+        /// Btn_UpdateProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_UpdateProfile;
+
+        /// <summary>
+        /// Btn_Logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_Logout;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

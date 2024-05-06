@@ -24,6 +24,15 @@ namespace ProjectAkhir_RAiso.View
         protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
 
         /// <summary>
+        /// Hl_Login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink Hl_Login;
+
+        /// <summary>
         /// Lbl_Name control.
         /// </summary>
         /// <remarks>

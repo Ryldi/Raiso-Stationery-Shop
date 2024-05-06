@@ -9,6 +9,10 @@ namespace ProjectAkhir_RAiso.Handler
 {
     public class UserHandler
     {
+        public static void UpdateUser(int UserID, string name, string DOB, string gender, string address, string phone, string password)
+        {
+            UserRepository.UpdateUser(UserID, name, DOB, gender, address, phone, password);
+        }
         public static User findUserByName(string name)
         {
             return UserRepository.findUserByName(name);

@@ -55,8 +55,13 @@ namespace ProjectAkhir_RAiso.View
 
             if (Lbl_Status.Text == "Login Success.")
             {
+                Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Session["UserData"] = UserController.checkRegisteredUser(name, password);
                 Response.Redirect("HomePage.aspx");
+            }
+            else
+            {
+                Lbl_Status.ForeColor = System.Drawing.Color.Red;
             }
         }
     }

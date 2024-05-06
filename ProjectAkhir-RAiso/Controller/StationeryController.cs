@@ -22,7 +22,7 @@ namespace ProjectAkhir_RAiso.Controller
 
             StationeryHandler.DeleteStationery(name);
 
-            return "Delete Successfully";
+            return "Delete Success";
 
         }
         public static string UpdateStationery(string name, string price, int id)
