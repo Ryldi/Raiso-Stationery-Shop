@@ -9,6 +9,14 @@
             gap: 2vh;
         }
 
+        .white-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
         .update-form {
             padding: 2vh;
             border: 2px solid #779ECB;
@@ -65,23 +73,25 @@
     </div>
     <div class="container">
         <h1 class="title">Edit Cart</h1>
-        <div class="update-form">
-            <div class="sub-form">
-                <asp:Label ID="Lbl_1" runat="server" Text="Stationery" CssClass="sub-title"></asp:Label>
-                <asp:Label ID="Lbl_ItemName" runat="server" Text=""></asp:Label>
-            </div>
-            <div class="sub-form">
-                <asp:Label ID="Lbl_2" runat="server" Text="Price" CssClass="sub-title"></asp:Label>
-                <asp:Label ID="Lbl_Price" runat="server" Text=""></asp:Label>
-            </div>
-            <asp:Panel ID="Pnl_ToCart" runat="server" CssClass="panel-cart">
-                <asp:Label ID="Lbl_3" runat="server" Text="Quantity" CssClass="sub-title"></asp:Label>
-                <div class="qty-container">
-                    <asp:ImageButton ID="Btn_Minus" runat="server" ImageUrl="~/Assets/minus.png" Width="20" OnClick="Btn_Minus_Click" />
-                    <asp:TextBox ID="Tb_Quantity" runat="server" Text="0" Width="50" OnTextChanged="Tb_Quantity_TextChanged" AutoPostBack="true" CssClass="quantity"></asp:TextBox>
-                    <asp:ImageButton ID="Btn_Plus" runat="server" ImageUrl="~/Assets/plus.png" Width="20" OnClick="Btn_Plus_Click" />
+        <div class="white-container">
+            <div class="update-form">
+                <div class="sub-form">
+                    <asp:Label ID="Lbl_1" runat="server" Text="Stationery" CssClass="sub-title"></asp:Label>
+                    <asp:Label ID="Lbl_ItemName" runat="server" Text=""></asp:Label>
                 </div>
-            </asp:Panel>
+                <div class="sub-form">
+                    <asp:Label ID="Lbl_2" runat="server" Text="Price" CssClass="sub-title"></asp:Label>
+                    <asp:Label ID="Lbl_Price" runat="server" Text=""></asp:Label>
+                </div>
+                <asp:Panel ID="Pnl_ToCart" runat="server" CssClass="panel-cart">
+                    <asp:Label ID="Lbl_3" runat="server" Text="Quantity" CssClass="sub-title"></asp:Label>
+                    <div class="qty-container">
+                        <asp:ImageButton ID="Btn_Minus" runat="server" ImageUrl="~/Assets/minus.png" Width="20" OnClick="Btn_Minus_Click" />
+                        <asp:TextBox ID="Tb_Quantity" runat="server" Text="0" Width="50" OnTextChanged="Tb_Quantity_TextChanged" AutoPostBack="true" CssClass="quantity"></asp:TextBox>
+                        <asp:ImageButton ID="Btn_Plus" runat="server" ImageUrl="~/Assets/plus.png" Width="20" OnClick="Btn_Plus_Click" />
+                    </div>
+                </asp:Panel>
+            </div>
         </div>
         <asp:Label ID="Lbl_Status" runat="server" Text=""></asp:Label>
         <asp:Button ID="Btn_Submit" runat="server" Text="Update" OnClick="Btn_Submit_Click" CssClass="add-button" />
