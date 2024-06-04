@@ -20,13 +20,13 @@ namespace ProjectAkhir_RAiso.View
         {
             string name = Tb_Name.Text;
             string DOB = Tb_DOB.Text;
-            string gender = Rad_Male.Checked ? "Male" : "Female";
+            string gender = Rad_Male.Checked ? "Male" : Rad_Female.Checked ? "Female" : "";
             string address = Tb_Address.Text;
             string phone = Tb_Phone.Text;
             string password = Tb_Password.Text;
             Lbl_Status.Text = UserController.RegisterAuth(name, DOB, gender, address, phone, password);
 
-            if(Lbl_Status.Text == "Account has been registered.")
+            if (Lbl_Status.Text == "Account has been registered.")
             {
                 Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Session["TempData"] = UserController.getUser(name);

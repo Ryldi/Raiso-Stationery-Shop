@@ -17,7 +17,7 @@ namespace ProjectAkhir_RAiso.View
             {
                 User Logged = (User)Session["UserData"];
 
-                if(Logged == null)
+                if (Logged == null)
                 {
                     Response.Redirect("HomePage.aspx");
                 }
@@ -30,6 +30,15 @@ namespace ProjectAkhir_RAiso.View
                 Tb_Address.Text = Logged.UserAddress;
                 Tb_Phone.Text = Logged.UserPhone;
                 Tb_Password.Text = Logged.UserPassword;
+
+                if (Logged.UserGender == "Male")
+                {
+                    Rad_Male.Checked = true;
+                }
+                else if (Logged.UserGender == "Female")
+                {
+                    Rad_Female.Checked = true;
+                }
             }
         }
 
