@@ -6,6 +6,15 @@
 <head runat="server">
     <title></title>
     <style>
+        body {
+            font-family: Arial, 'Sans Serif Collection';
+            background-image: url('../Assets/BackgroundRAiso.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed
+        }
+
         #RegisterForm {
             display: grid;
             justify-content: center;
@@ -69,7 +78,7 @@
                 <div class="sub-container">
                     <asp:Label ID="Lbl_Gender" runat="server" Text="Gender "></asp:Label>
                     <div>
-                        <asp:RadioButton ID="Rad_Male" runat="server" GroupName="Rad_Gender" Checked="true" />
+                        <asp:RadioButton ID="Rad_Male" runat="server" GroupName="Rad_Gender" Checked="false" />
                         <asp:Label ID="Lbl_Male" runat="server" Text="Male"></asp:Label>
                         <asp:RadioButton ID="Rad_Female" runat="server" GroupName="Rad_Gender" />
                         <asp:Label ID="Lbl_Female" runat="server" Text="Female"></asp:Label>

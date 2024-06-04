@@ -6,6 +6,15 @@
 <head runat="server">
     <title></title>
     <style>
+        body {
+            font-family: Arial, 'Sans Serif Collection';
+            background-image: url('../Assets/BackgroundRAiso.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed
+        }
+
         #loginForm {
             display: grid;
             justify-content: center;
