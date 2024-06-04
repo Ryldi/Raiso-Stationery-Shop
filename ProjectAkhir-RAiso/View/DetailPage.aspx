@@ -8,6 +8,14 @@
             gap: 2vh;
         }
 
+        .white-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px; 
+        }
+
         .detail {
             padding: 2vh;
             border: 2px solid #779ECB;
@@ -49,14 +57,16 @@
         <asp:ImageButton ID="Btn_Back" runat="server" ImageUrl="~/Assets/back.png" OnClick="Btn_Back_Click" Width="50" />
     </div>
     <div class="container">
-        <div class="detail">
-            <div>
-                <asp:Label ID="Lbl_1" runat="server" Text="Stationery: "></asp:Label>
-                <asp:Label ID="Lbl_Name" runat="server" Text=""></asp:Label>
-            </div>
-            <div>
-                <asp:Label ID="Lbl_2" runat="server" Text="Price: $"></asp:Label>
-                <asp:Label ID="Lbl_Price" runat="server" Text=""></asp:Label>
+        <div class="white-container">
+            <div class="detail">
+                <div>
+                    <asp:Label ID="Lbl_1" runat="server" Text="Stationery: "></asp:Label>
+                    <asp:Label ID="Lbl_Name" runat="server" Text=""></asp:Label>
+                </div>
+                <div>
+                    <asp:Label ID="Lbl_2" runat="server" Text="Price: $"></asp:Label>
+                    <asp:Label ID="Lbl_Price" runat="server" Text=""></asp:Label>
+                </div>
             </div>
         </div>
         <asp:Label ID="Lbl_Status" runat="server" Text=""></asp:Label>
