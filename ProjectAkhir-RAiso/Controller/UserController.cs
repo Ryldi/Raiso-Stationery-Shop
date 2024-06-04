@@ -14,17 +14,25 @@ namespace ProjectAkhir_RAiso.Controller
         {
             if (name == "" || DOB == "" || gender == "" || address == "" || password == "" || phone == "")
             {
+                if (string.IsNullOrEmpty(gender))
+                {
+                    return "Please select your gender.";
+                }
                 return "All field must be filled!";
-            }else if (isDuplicateName(name))
+            }
+            else if (isDuplicateName(name))
             {
                 return "Username has already been used.";
-            }else if (!password.All(x => char.IsLetterOrDigit(x) || char.IsWhiteSpace(x)))
+            }
+            else if (!password.Any(char.IsLetter) || !password.Any(char.IsDigit))
             {
                 return "Password must be alphanumeric.";
-            }else if (name.Length < 5 || name.Length > 50)
+            }
+            else if (name.Length < 5 || name.Length > 50)
             {
                 return "Name must be at least 5 characters.";
-            }else if (getUserAge(DOB) < 1)
+            }
+            else if (getUserAge(DOB) < 1)
             {
                 return "User must be at least 1 year old";
             }
@@ -39,7 +47,8 @@ namespace ProjectAkhir_RAiso.Controller
             if (username == "" || password == "")
             {
                 return "All field must be filled!";
-            }else if (checkRegisteredUser(username, password) == null)
+            }
+            else if (checkRegisteredUser(username, password) == null)
             {
                 return "Wrong Credentials.";
             }
@@ -56,7 +65,7 @@ namespace ProjectAkhir_RAiso.Controller
         {
             User user = UserHandler.findUserByName(name);
 
-            if(user == null) { return false; }
+            if (user == null) { return false; }
             return true;
         }
 
@@ -83,7 +92,7 @@ namespace ProjectAkhir_RAiso.Controller
             {
                 return "All field must be filled!";
             }
-            else if (!password.All(x => char.IsLetterOrDigit(x) || char.IsWhiteSpace(x)))
+            else if (!password.Any(char.IsLetter) || !password.Any(char.IsDigit))
             {
                 return "Password must be alphanumeric.";
             }
