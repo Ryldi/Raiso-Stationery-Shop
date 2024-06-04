@@ -8,9 +8,15 @@
     <style>
         body {
             font-family: Arial, 'Sans Serif Collection';
+            background-image: url('../Assets/BackgroundRAiso.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-attachment: fixed
         }
 
         #Navigation-Bar {
+            background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan opasitas 90% */
             border-bottom: 1px solid #88AED0;
             display: flex;
             justify-content: space-between;

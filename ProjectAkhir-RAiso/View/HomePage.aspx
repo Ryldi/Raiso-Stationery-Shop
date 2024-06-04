@@ -2,6 +2,39 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2vh;
+        }
+
+        .left-panel {
+            flex: 6;
+            padding-right: 2em; 
+            padding-left: 0.7em;
+            font-size: 4em;
+            color: #5485BD;
+            text-align: justify;
+            font-weight: bold;
+        }
+
+        .left-panel p {
+            font-size: 0.5em;
+            line-height: 1.3;
+            color: #5485BD;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: normal; 
+            width: 100%; 
+         }
+
+
+        .right-panel {
+            flex: 2;
+        }
+
         .grid-view {
             display: flex;
             justify-content: center;
@@ -31,6 +64,16 @@
             padding-right: 1vh;
             border-bottom: 2px solid #779ECB;
             box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        }
+
+        .grid-container {
+            display: inline-block; 
+            background-color: white; 
+            border-radius: 5px; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
         }
 
         .button-insert {
@@ -103,22 +146,32 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="add-container">
-        <asp:Button ID="Btn_Insert" runat="server" Text="Add" Visible="true" OnClick="Btn_Insert_Click" CssClass="button-insert" />
-    </div>
 
-    <asp:GridView ID="Gv_Stationeries" runat="server" AutoGenerateColumns="false" BorderStyle="None" CssClass="grid-view">
-        <Columns>
-            <asp:BoundField DataField="StationeryName" HeaderText="Stationery List" ItemStyle-CssClass="grid-item" HeaderStyle-CssClass="grid-header" />
-            <asp:TemplateField ItemStyle-CssClass="img-item" HeaderStyle-CssClass="grid-header">
-                <ItemTemplate>
-                    <asp:ImageButton ID="Btn_Detail" runat="server" ImageUrl="~/Assets/detail.png" Width="30" Visible="true" OnClick="Btn_Detail_Click" />
-                    <asp:ImageButton ID="Btn_Edit" runat="server" ImageUrl="~/Assets/edit.png" Width="30" Visible="true" OnClick="Btn_Edit_Click" />
-                    <asp:ImageButton ID="Btn_Delete" runat="server" ImageUrl="~/Assets/delete.png" Width="30" Visible="true" OnClick="Btn_Delete_Click" />
-                </ItemTemplate>
-            </asp:TemplateField>
-        </Columns>
-    </asp:GridView>
+    <div class="container">
+        <div class="left-panel">
+            Your Stationery Stock Solution
+            <p>RAiso is a well-known online store specializing in selling high-quality stationery products. This shop offers a variety of stationery ranging from pens, pencils, notebooks, to other office and school equipment.</p>
+        </div>
+        <div class="right-panel">
+            <div class="add-container">
+                <asp:Button ID="Btn_Insert" runat="server" Text="Add" Visible="true" OnClick="Btn_Insert_Click" CssClass="button-insert" />
+            </div>
+            <div class="grid-container">
+                <asp:GridView ID="Gv_Stationeries" runat="server" AutoGenerateColumns="false" BorderStyle="None" CssClass="grid-view">
+                    <Columns>
+                        <asp:BoundField DataField="StationeryName" HeaderText="Stationery List" ItemStyle-CssClass="grid-item" HeaderStyle-CssClass="grid-header" />
+                        <asp:TemplateField ItemStyle-CssClass="img-item" HeaderStyle-CssClass="grid-header">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="Btn_Detail" runat="server" ImageUrl="~/Assets/detail.png" Width="30" Visible="true" OnClick="Btn_Detail_Click" />
+                                <asp:ImageButton ID="Btn_Edit" runat="server" ImageUrl="~/Assets/edit.png" Width="30" Visible="true" OnClick="Btn_Edit_Click" />
+                                <asp:ImageButton ID="Btn_Delete" runat="server" ImageUrl="~/Assets/delete.png" Width="30" Visible="true" OnClick="Btn_Delete_Click" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
+    </div>
 
     <asp:Panel ID="Mdl_Delete" runat="server" Visible="false" CssClass="modal-delete">
         <div>
