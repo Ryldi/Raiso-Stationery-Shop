@@ -81,6 +81,11 @@
                         <asp:ImageButton ID="Btn_ShowPassword" runat="server" ImageUrl="~/Assets/show.png" Width="20" Height="23" ImageAlign="Top" OnClick="Btn_ShowPassword_Click" Show="0" />
                     </div>
                 </div>
+                <div class="sub-container">
+                    <div>
+                        <asp:CheckBox ID="Cb_Cookies" runat="server" Text=" Remember Me"/>
+                    </div>
+                </div>
             </div>
             <asp:Label ID="Lbl_Status" runat="server" Text=""></asp:Label>
             <asp:Button ID="Btn_Submit" runat="server" Text="Login" OnClick="Btn_Submit_Click" CssClass="btn-submit" />

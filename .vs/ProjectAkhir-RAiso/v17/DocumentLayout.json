@@ -3,15 +3,39 @@
   "WorkspaceRootPath": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\loginpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\insertpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\insertpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\homepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\view\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\cartpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\general.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\general.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\general.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\general.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\loginpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\registerpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\view\\cartpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\cartpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,19 +43,19 @@
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\updateprofilepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\view\\updateprofilepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\view\\updateprofilepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\view\\updateprofilepage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|d:\\binus\\sem-4\\psd\\projectakhir-raiso\\projectakhir-raiso\\handler\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\projectakhir-raiso\\handler\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E8FEB2A-2C0A-4227-B433-CD2905B8E87A}|ProjectAkhir-RAiso\\ProjectAkhir-RAiso.csproj|solutionrelative:projectakhir-raiso\\handler\\userhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 441,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +78,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "InsertPage.aspx.cs",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\InsertPage.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\InsertPage.aspx.cs",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\InsertPage.aspx.cs",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\InsertPage.aspx.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T04:55:23.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "General.Master.cs",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\General.Master.cs",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\General.Master.cs",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\General.Master.cs",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\General.Master.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAowFwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T04:50:50.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "General.Master",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\General.Master",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\General.Master",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\General.Master",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\General.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-05T04:49:28.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterPage.aspx.cs",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\RegisterPage.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\RegisterPage.aspx.cs",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\RegisterPage.aspx.cs",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\RegisterPage.aspx.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:13:29.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.aspx.cs",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\LoginPage.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\LoginPage.aspx.cs",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\LoginPage.aspx.cs",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\LoginPage.aspx.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwBMAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:05:37.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginPage.aspx",
+              "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\LoginPage.aspx",
+              "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\LoginPage.aspx",
+              "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\LoginPage.aspx",
+              "RelativeToolTip": "ProjectAkhir-RAiso\\View\\LoginPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-05T03:02:18.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CartPage.aspx.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\CartPage.aspx.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\CartPage.aspx.cs",
@@ -67,20 +169,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HomePage.aspx.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\HomePage.aspx.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\HomePage.aspx.cs",
               "ToolTip": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\HomePage.aspx.cs",
               "RelativeToolTip": "ProjectAkhir-RAiso\\View\\HomePage.aspx.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAwwHMAAAAJAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T13:15:36.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HomePage.aspx",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\HomePage.aspx",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\HomePage.aspx",
@@ -93,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\Repository\\UserRepository.cs",
@@ -106,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "UserHandler.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\Handler\\UserHandler.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\Handler\\UserHandler.cs",
@@ -119,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\Controller\\UserController.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\Controller\\UserController.cs",
@@ -132,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "UpdateProfilePage.aspx.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\UpdateProfilePage.aspx.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\UpdateProfilePage.aspx.cs",
@@ -145,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "UpdateProfilePage.aspx",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\View\\UpdateProfilePage.aspx",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\View\\UpdateProfilePage.aspx",
@@ -158,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "StationeryController.cs",
               "DocumentMoniker": "D:\\BINUS\\SEM-4\\PSD\\ProjectAkhir-RAiso\\ProjectAkhir-RAiso\\Controller\\StationeryController.cs",
               "RelativeDocumentMoniker": "ProjectAkhir-RAiso\\Controller\\StationeryController.cs",

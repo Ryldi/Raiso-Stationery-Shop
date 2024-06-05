@@ -3,6 +3,7 @@ using ProjectAkhir_RAiso.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Security.Principal;
 using System.Web;
@@ -19,6 +20,11 @@ namespace ProjectAkhir_RAiso.View
             {
                 Gv_Stationeries.DataSource = StationeryController.GetStationeryList();
                 Gv_Stationeries.DataBind();
+
+                if (Request.Cookies["UserLogged"] != null)
+                {
+                    Session["UserData"] = UserController.getUser(Request.Cookies["UserLogged"].Value);
+                }
 
                 User Logged = (User)Session["UserData"];
 

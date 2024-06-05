@@ -21,6 +21,11 @@ namespace ProjectAkhir_RAiso.View
                 Tb_Name.Text = user.UserName;
                 Tb_Password.Text = user.UserPassword;
             }
+
+            if(Request.Cookies["UserLogged"] != null)
+            {
+                Response.Redirect("HomePage.aspx");
+            }
         }
 
         protected void Btn_ShowPassword_Click(object sender, ImageClickEventArgs e)
@@ -55,6 +60,13 @@ namespace ProjectAkhir_RAiso.View
 
             if (Lbl_Status.Text == "Login Success.")
             {
+                if (Cb_Cookies.Checked)
+                {
+                    HttpCookie cookie = new HttpCookie("UserLogged");
+                    cookie.Value = UserController.checkRegisteredUser(name, password).UserName;
+                    cookie.Expires = DateTime.Now.AddDays(1);
+                    Response.Cookies.Add(cookie);
+                }
                 Lbl_Status.ForeColor = System.Drawing.Color.Green;
                 Session["UserData"] = UserController.checkRegisteredUser(name, password);
                 Response.Redirect("HomePage.aspx");

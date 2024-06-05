@@ -87,6 +87,11 @@ namespace ProjectAkhir_RAiso.View
         {
             Session["UserData"] = null;
             Session["TempData"] = null;
+
+            HttpCookie cookie = new HttpCookie("UserLogged");
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+
             Response.Redirect("LoginPage.aspx");
         }
 
