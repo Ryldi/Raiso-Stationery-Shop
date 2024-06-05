@@ -30,6 +30,11 @@ namespace ProjectAkhir_RAiso.Handler
             CartRepository.DeleteItemFromCart(UserID, ItemID);
         }
 
+        public static void DeleteItemFromAllCart(string ItemName)
+        {
+            CartRepository.DeleteItemFromAllCart(ItemName);
+        }
+
         public static void UpdateCart(int UserID, int ItemID, int Quantity)
         {
             CartRepository.UpdateCart(UserID, ItemID, Quantity);

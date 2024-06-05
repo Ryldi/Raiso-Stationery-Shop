@@ -59,6 +59,11 @@ namespace ProjectAkhir_RAiso.Controller
             CartHandler.DeleteItemFromCart(UserID, ItemID);
         }
 
+        public static void DeleteItemFromAllCart(string ItemName)
+        {
+            CartHandler.DeleteItemFromAllCart(ItemName);
+        }
+
         public static Cart GetCart(int UserID, int ItemID)
         {
             return CartHandler.GetCart(UserID, ItemID);

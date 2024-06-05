@@ -70,5 +70,10 @@ namespace ProjectAkhir_RAiso.Controller
 
             return TransactionList;
         }
+
+        public static void DeleteItemFromAllTransaction(string ItemName)
+        {
+            TransactionHandler.DeleteItemFromAllTransaction(ItemName);
+        }
     }
 }

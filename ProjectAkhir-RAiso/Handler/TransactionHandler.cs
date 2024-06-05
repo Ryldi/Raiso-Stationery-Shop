@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.Util;
+using System.Xml.Linq;
 
 namespace ProjectAkhir_RAiso.Handler
 {
@@ -33,6 +34,11 @@ namespace ProjectAkhir_RAiso.Handler
         public static List<TransactionDetail> GetTransactionDetail(int TransactionID)
         {
             return TransactionRepository.GetTransactionDetail(TransactionID);
+        }
+
+        public static void DeleteItemFromAllTransaction(string ItemName)
+        {
+            TransactionRepository.DeleteItemFromAllTransaction(ItemName);
         }
     }
 }

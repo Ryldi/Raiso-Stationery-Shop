@@ -13,11 +13,11 @@ namespace ProjectAkhir_RAiso.Controller
         {
             if (CartController.CheckItemInCart(name))
             {
-                return "Item cannot be deleted (Item is in users cart)";
+                CartController.DeleteItemFromAllCart(name);
             }
-            else if (TransactionController.CheckItemInTransaction(name))
+            if (TransactionController.CheckItemInTransaction(name))
             {
-                return "Item cannot be deleted (Item is in transactions)";
+                TransactionController.DeleteItemFromAllTransaction(name);
             }
 
             StationeryHandler.DeleteStationery(name);

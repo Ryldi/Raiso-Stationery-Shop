@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Xml.Linq;
 
 namespace ProjectAkhir_RAiso.Repository
 {
@@ -49,6 +50,22 @@ namespace ProjectAkhir_RAiso.Repository
 
             _db.Carts.Remove(TargetCart);
             _db.SaveChanges();
+        }
+
+        public static void DeleteItemFromAllCart(string ItemName)
+        {
+            int itemId = _db.Stationeries.Where(x => x.StationeryName == ItemName).FirstOrDefault().StationeryID;
+            List<Cart> TargetCart = (from cart in _db.Carts
+                                     where cart.StationeryID == itemId
+                                     select cart).ToList();
+
+            if (TargetCart == null) { return; };
+
+            foreach (Cart cart in TargetCart)
+            {
+                _db.Carts.Remove(cart);
+                _db.SaveChanges();
+            }
         }
         public static void UpdateCart(int UserID, int ItemID, int newQuantity)
         {

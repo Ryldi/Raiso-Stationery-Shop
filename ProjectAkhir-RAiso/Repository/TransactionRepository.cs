@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls.WebParts;
 using System.Web.Util;
+using System.Xml.Linq;
 
 namespace ProjectAkhir_RAiso.Repository
 {
@@ -54,6 +56,35 @@ namespace ProjectAkhir_RAiso.Repository
             if (Detail == null) { return false; }
 
             return true;
+        }
+
+        public static void DeleteItemFromAllTransaction(string ItemName)
+        {
+            int itemId = _db.Stationeries.Where(x => x.StationeryName == ItemName).FirstOrDefault().StationeryID;
+            List<TransactionDetail> Transactions = (from transaction in _db.TransactionDetails
+                                                    where transaction.StationeryID == itemId
+                                                    select transaction).ToList();
+
+            foreach (TransactionDetail transaction in Transactions)
+            {
+                _db.TransactionDetails.Remove(transaction);
+                _db.SaveChanges();
+
+                if (_db.TransactionDetails.Where(x=> x.TransactionID == transaction.TransactionID).FirstOrDefault() == null)
+                {
+                    DeleteHeader(transaction.TransactionID);
+                }
+            }
+        }
+
+        public static void DeleteHeader(int TrId)
+        {
+            TransactionHeader Target = _db.TransactionHeaders.Find(TrId);
+
+            if (Target == null) { return; }
+
+            _db.TransactionHeaders.Remove(Target);
+            _db.SaveChanges();
         }
     }
 }
