@@ -65,5 +65,10 @@ namespace ProjectAkhir_RAiso.View
 
             return data;
         }
+
+        protected void Btn_Back_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("TransactionHistoryPage.aspx");
+        }
     }
 }
