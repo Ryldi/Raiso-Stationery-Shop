@@ -40,5 +40,10 @@ namespace ProjectAkhir_RAiso.Handler
         {
             TransactionRepository.DeleteItemFromAllTransaction(ItemName);
         }
+
+        public static List<TransactionHeader> GetTransactionHeaders()
+        {
+            return TransactionRepository.GetTransactionHeaders();
+        }
     }
 }
