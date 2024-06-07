@@ -124,20 +124,3 @@ C:\Users\Ivan Adrian\Downloads\RAiso\Raiso-Stationery-Shop\ProjectAkhir-RAiso\ob
 C:\Users\Ivan Adrian\Downloads\RAiso\Raiso-Stationery-Shop\ProjectAkhir-RAiso\obj\Debug\ProjectAkhir-RAiso.csproj.CopyComplete
 C:\Users\Ivan Adrian\Downloads\RAiso\Raiso-Stationery-Shop\ProjectAkhir-RAiso\obj\Debug\ProjectAkhir-RAiso.dll
 C:\Users\Ivan Adrian\Downloads\RAiso\Raiso-Stationery-Shop\ProjectAkhir-RAiso\obj\Debug\ProjectAkhir-RAiso.pdb
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.CrystalReports.Engine.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportSource.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.Shared.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.Web.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.Controllers.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.Prompting.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
-D:\BINUS\SEM-4\PSD\ProjectAkhir-RAiso\ProjectAkhir-RAiso\bin\stdole.dll
