@@ -7,17 +7,9 @@
             display: flex;
             justify-content: center;
         }
-        .back-button {
-            padding-top: 3vh;
-            padding-left: 5vh;
-        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="back-button">
-        <asp:ImageButton ID="Btn_Back" runat="server" ImageUrl="~/Assets/back.png" Width="50" OnClick="Btn_Back_Click" />
-    </div>
-
     <div class="report-container">
         <CR:CrystalReportViewer ID="CR_Viewer" runat="server" AutoDataBind="true"/>
     </div>
