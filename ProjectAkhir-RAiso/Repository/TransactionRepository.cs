@@ -86,5 +86,14 @@ namespace ProjectAkhir_RAiso.Repository
             _db.TransactionHeaders.Remove(Target);
             _db.SaveChanges();
         }
+
+        public static List<TransactionHeader> GetTransactionHeaders()
+        {
+            if(_db.TransactionHeaders == null) { return null; }
+
+            List<TransactionHeader> transactionHeaders = _db.TransactionHeaders.ToList();
+
+            return transactionHeaders;
+        }
     }
 }
